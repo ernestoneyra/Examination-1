@@ -1,0 +1,177 @@
+.navbar{
+  position: relative;
+  background-color: red;
+  display: table;
+}
+header {
+  background: rgb(96, 96, 241);
+  position: relative;
+  padding-bottom: 15px;
+  max-width: 1210px;
+  margin: auto;
+  font-size: 17px;
+  font-family: monospace;
+  padding-top: 20px;
+  
+}
+
+header ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+  
+}
+
+header ul li{
+  float: left;
+  background-color:none;
+  display: block;
+  padding: 0px 10px;
+  color: white;
+}
+
+.float{
+  width: 75%;
+   margin: 0px 20px;
+  
+}
+
+header img{
+  max-width: 90%;
+  max-height: 300px;
+  margin-top: 100px;
+  top: 0px;
+  right: 0px;
+  border: 4px dotted;
+  border-color: black;
+  
+}
+
+header b{
+  font-size: 25px;
+  font-family: sans-serif;
+  font-style: oblique;
+  margin-left: 20px;
+  
+  
+}
+header h1{
+  font-size: 50px;
+  font-family: fantasy;
+  color: rgb(92, 16, 16);
+  font-style: italic;
+  text-align: center;
+}
+#kontakt{
+  max-width: 200px;
+  max-height: 300px;
+  position: static;
+  top: 320px;
+  background-color: rgb(209, 159, 66);
+  border: 4px solid;
+  border-color: black;
+  
+  
+}
+section {
+  background: rgb(88, 161, 88);
+  padding: 5px;
+  
+  max-width: 1200px;
+  margin: auto;
+  
+}
+h2{
+  margin-left: 20px;
+}
+
+
+a button{
+  background-color: yellow;
+  color: green;
+  border-radius: 10px;
+  
+}
+section h2{
+  position: static;
+  color: aqua;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.grid-container{
+  display: grid;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+ grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+
+li{
+  font-weight: bold;
+}
+.grid-item1 {
+  color: rgb(124, 101, 59);
+  border: 1px solid;
+  border-color: red;
+  padding: 5px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  text-align: left;
+  
+}
+.grid-item2 {
+  
+  border: 1px solid;
+  padding: 5px;
+  border-color: yellow;
+  text-align: left;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.grid-item3 {
+  color: white;
+  border: 1px solid;
+  padding: 5px;
+  border-color: white;
+  text-align: left;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+h3{
+  text-align: center;
+  color: rgb(110, 57, 57);
+  border: 1px solid;
+}
+section p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    
+}
+
+body {
+  
+  background-color: rgb(59, 59, 59);
+  
+}
+
+
+header img{
+  max-width: 30%;
+  max-height: 300px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: 4px dotted;
+  border-color: black;
+}
+
+
+footer img{
+display: block;
+width: 100%;
+max-width: 1210px;
+margin: auto;
+
+border: 2px solid;
+ }
+
