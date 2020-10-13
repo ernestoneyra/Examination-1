@@ -1,7 +1,7 @@
 .navbar{
-  position: relative;
-  background-color: red;
-  display: table;
+  
+  background-color: rgb(0, 0, 0);
+  display: grid;
 }
 header {
   background: rgb(96, 96, 241);
@@ -11,10 +11,18 @@ header {
   margin: auto;
   font-size: 17px;
   font-family: monospace;
-  padding-top: 20px;
+ 
   
 }
-
+header img{
+  max-width: 90%;
+  max-height: 300px;
+  margin-top: 7px;
+top: 300px;
+  border: 4px dotted;
+  border-color: black;
+  position: sticky;
+}
 header ul{
   list-style-type: none;
   margin: 0;
@@ -37,22 +45,11 @@ header ul li{
   
 }
 
-header img{
-  max-width: 90%;
-  max-height: 300px;
-  margin-top: 100px;
-  top: 0px;
-  right: 0px;
-  border: 4px dotted;
-  border-color: black;
-  
-}
-
 header b{
   font-size: 25px;
   font-family: sans-serif;
   font-style: oblique;
-  margin-left: 20px;
+  margin-left: 0px;
   
   
 }
@@ -61,25 +58,18 @@ header h1{
   font-family: fantasy;
   color: rgb(92, 16, 16);
   font-style: italic;
-  text-align: center;
-}
-#kontakt{
-  max-width: 200px;
-  max-height: 300px;
-  position: static;
-  top: 320px;
-  background-color: rgb(209, 159, 66);
-  border: 4px solid;
-  border-color: black;
-  
   
 }
-section {
-  background: rgb(88, 161, 88);
-  padding: 5px;
-  
-  max-width: 1200px;
-  margin: auto;
+
+
+.intressen{
+ 
+    background: rgb(88, 161, 88);
+    padding: 5px;
+    
+    max-width: 1200px;
+    margin: auto;
+    
   
 }
 h2{
@@ -93,18 +83,31 @@ a button{
   border-radius: 10px;
   
 }
+a:hover{
+  background-color: grey;
+  
+}
+a:visited{
+  color: blueviolet;
+}
+a{
+  color: red;
+}
 section h2{
   position: static;
   color: aqua;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.grid-container{
-  display: grid;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
- grid-row-start: 1;
-  grid-row-end: 3;
-}
 
+.auto-grid{
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap: 3rem;
+  list-style-type: none;
+  
+  
+}
 
 li{
   font-weight: bold;
@@ -114,8 +117,7 @@ li{
   border: 1px solid;
   border-color: red;
   padding: 5px;
-  grid-row-start: 1;
-  grid-row-end: 3;
+
   text-align: left;
   
 }
@@ -125,8 +127,7 @@ li{
   padding: 5px;
   border-color: yellow;
   text-align: left;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  
 }
 .grid-item3 {
   color: white;
@@ -134,8 +135,8 @@ li{
   padding: 5px;
   border-color: white;
   text-align: left;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  margin-right: auto;
+ 
 }
 h3{
   text-align: center;
@@ -165,13 +166,30 @@ header img{
   border-color: black;
 }
 
+.random{
+  background:rgb(124, 6, 6);
+  padding: 5px;
+  
+  max-width: 1200px;
+  margin: auto;
+  
+
+}
 
 footer img{
-display: block;
-width: 100%;
-max-width: 1210px;
-margin: auto;
 
-border: 2px solid;
- }
+  width: 100%;
+  
+  
+  border: 2px solid;
+   }
 
+#kontakt{ 
+ background-color: rgb(209, 159, 66);
+    border: 4px solid;
+    border-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+ 
+    
+  }
