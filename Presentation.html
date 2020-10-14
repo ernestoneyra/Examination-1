@@ -39,14 +39,14 @@
             <!--img elementet betyder att det är en bild som ska in, src står för source och här ska länken till själbva bilden in.
                 alt (alternativ) namnet kommer att visas om webbläsaren inte lyckas hitta bilden som länkas. med widht och height
                 lägger man till bredden och höjden på bilden.  -->
-            <img src="./Images/Migmedramen.jpg" alt="Mig med ramen" style="width:20%;height: 100%;" />
+            <img src="./Images/Migmedramen.jpg" alt="Mig med ramen" class="responsive" />
 
 
 
 
-            <!--Klassen flow bestämmer hur elemntet p ska se ut. p används när man skriver vanlig text. Genom att ha hela
+            <!--Klassen intro bestämmer hur elemntet p ska se ut. p används när man skriver vanlig text. Genom att ha hela
                     texten i klassen kan jag ändra den i CSS genom klassen istället för p.-->
-            <div class="float">
+            <div class="intro">
                 <!--h1 står för Header och den är den största rubriken, den följs av h2, h3, h4 osv.-->
                 <h1>Ernesto Neyra</h1>
                 <!--b elementet betyder bold och gör texten till fet stil.-->
@@ -76,14 +76,13 @@
             <div class="intressen">
                 <h2>Mina intressen. </h2>
 
-                <!--<div class="grid-container">-->
-                <!--Här skapade jag en class som innehåller hela griden. Det finns 3st i i den. De utmärks av li.
-                    Varje li element är en egen del, men dem kontrolleras av grid-item(x) klassen. Auto-grid klassen
-                    är inställt så att den autojusteras baserat på pixlarna, den är responsiv.-->
-                <ul class="auto-grid">
+                
+                <!--Här skapade jag en class som innehåller hela flexboxen. Det finns 3st i den. De utmärks av li.
+                    Varje li element är en egen del, men dem kontrolleras av flex-item(x) klassen. -->
+                <ul class="flex-box">
                     <li>
-                        <!--Jag skapade 3 st grid-items inom auto-grid klassen så att jag kan ändra dem individuellt.-->
-                        <div class="grid-item1">
+                        <!--Jag skapade 3 st flex-items så att jag kan ändra dem individuellt.-->
+                        <div class="flex-item1">
                             <h3>Favorit Filmer</h3>
 
                             <ul>
@@ -96,7 +95,7 @@
                     </li>
 
                     <li>
-                        <div class="grid-item2">
+                        <div class="flex-item2">
                             <h3>Favorit Anime</h3>
                             <ul>
                                 <li>
@@ -125,7 +124,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="grid-item3">
+                        <div class="flex-item3">
                             <h3>Favorit Spel</h3>
                             <ul>
                                 <li>Final Fantasy serien</li>
@@ -191,19 +190,18 @@
         <!--Jag gjorde ett till section element för en ny sektion på sidan.-->
         <!--footer delen är längst ner på sidan.-->
         <footer>
-            <!--Huvudklassen som är förääldern i footer.-->
+            <!--Huvudklassen som är föräldern i footer.-->
             <div class="random">
 
-                <ul class="auto-grid">
-                    <li>
+                <div class="grid-container">
+                    <div class="grid-item1">
                         <h1>Kontakta mig.</h1>
-                    </li>
-
-                    <li></li>
-                    <li></li>
-                    <li>Vill du komma i kontakt med mig om egenetligen vad som helst så får du gärna fylla i formuläret
-                        till höger så återkommer jag så fort jag kan.</li>
-                    <li>
+                    </div>
+                    
+                    <div class="grid-item2">
+                        <p>Vill du komma i kontakt med mig om egenetligen vad som helst så får du gärna fylla i formuläret
+                        till höger så återkommer jag så fort jag kan.</p></div>
+                   <div class="grid-item3">
                         <!--Id elementet fungerar på liknande sätt som class, men man kan endast ha ett id namn i ett html document.
                 Som en class är den kopplad till stylesheet. Den kan även användas av Javaascript. I denna id skapade
                 jag ett formulär som jag döpte till Kontakta mig-->
@@ -228,15 +226,13 @@
                                 </form>
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <!--style attributet ändrar man bildens storlek och placeringen på hemsidan.-->
-                        <img src="./Images/cute kitten.jpg" alt="cute katt" style="vertical-align: bottom" /></li>
+                    </div>
+                     
 
 
 
             </div>
-
+            </div>
 
         </footer>
 
