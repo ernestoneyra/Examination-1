@@ -10,14 +10,15 @@ header {
   max-width: 1210px;
   margin: auto;
   font-size: 17px;
+}
+header p{
   font-family: monospace;
- 
-  
+  font-style: italic;
 }
 header img{
-  max-width: 90%;
-  max-height: 300px;
-  margin-top: 7px;
+  width: 20%;
+  height: auto;
+  margin-top: 20px;
 top: 300px;
   border: 4px dotted;
   border-color: black;
@@ -39,7 +40,8 @@ header ul li{
   color: white;
 }
 
-.float{
+.intro{
+  
   width: 75%;
    margin: 0px 20px;
   
@@ -48,8 +50,9 @@ header ul li{
 header b{
   font-size: 25px;
   font-family: sans-serif;
-  font-style: oblique;
+  font-variant: small-caps;
   margin-left: 0px;
+  color: aliceblue;
   
   
 }
@@ -72,9 +75,7 @@ header h1{
     
   
 }
-h2{
-  margin-left: 20px;
-}
+
 
 
 a button{
@@ -94,12 +95,12 @@ a{
   color: red;
 }
 section h2{
-  position: static;
+  margin-left: 20px;
   color: aqua;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.auto-grid{
+/*.auto-grid{
   --auto-grid-min-size: 16rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
@@ -107,36 +108,52 @@ section h2{
   list-style-type: none;
   
   
-}
+}*/
 
 li{
   font-weight: bold;
 }
-.grid-item1 {
+.flex-box{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding-bottom: 5px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+.flex-item1 {
   color: rgb(124, 101, 59);
   border: 1px solid;
   border-color: red;
   padding: 5px;
-
+  width: 300px;
   text-align: left;
   
 }
-.grid-item2 {
-  
+.flex-item2 {
+  width: 300px;
   border: 1px solid;
   padding: 5px;
   border-color: yellow;
   text-align: left;
   
 }
-.grid-item3 {
+.flex-item3 {
   color: white;
   border: 1px solid;
   padding: 5px;
   border-color: white;
   text-align: left;
-  margin-right: auto;
+  width: 300px;
  
+}
+@media screen and (max-width: 600px) {
+  .flex-box{
+    width: 75%;
+    float: none;
+    
+  }
 }
 h3{
   text-align: center;
@@ -148,7 +165,50 @@ section p {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     
 }
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  grid-template-rows: auto auto;
 
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.grid-item1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  
+}
+.grid-item2{
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+.grid-item3{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  
+}
+.grid-item4{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+}
+@media screen and (max-width: 600px) {
+  .grid-container{
+    gap: 0px;
+    
+    }
+    .grid-item1{
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    .grid-item2{
+      padding-right: 2px;
+      
+    }
+
+}
 body {
   
   background-color: rgb(59, 59, 59);
@@ -176,13 +236,6 @@ header img{
 
 }
 
-footer img{
-
-  width: 100%;
-  
-  
-  border: 2px solid;
-   }
 
 #kontakt{ 
  background-color: rgb(209, 159, 66);
@@ -190,6 +243,7 @@ footer img{
     border-color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
- 
+    
+    
     
   }
